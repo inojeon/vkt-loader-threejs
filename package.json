@@ -1,0 +1,20 @@
+{
+  "name": "vkt-loader-threejs",
+  "version": "1.0.0",
+  "description": "vtk-loader-threejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inojeon/vkt-loader-threejs.git"
+  },
+  "keywords": ["threejs", "vtk", "edison"],
+  "author": "inojeon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inojeon/vkt-loader-threejs/issues"
+  },
+  "homepage": "https://github.com/inojeon/vkt-loader-threejs#readme"
+}
