@@ -4,17 +4,40 @@
   "description": "vtk-loader-threejs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "prettier-eslint '**/*.js' --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/inojeon/vkt-loader-threejs.git"
   },
-  "keywords": ["threejs", "vtk", "edison"],
+  "keywords": [
+    "threejs",
+    "vtk",
+    "edison"
+  ],
   "author": "inojeon",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/inojeon/vkt-loader-threejs/issues"
   },
-  "homepage": "https://github.com/inojeon/vkt-loader-threejs#readme"
+  "homepage": "https://github.com/inojeon/vkt-loader-threejs#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "prettier-eslint": "^8.8.2",
+    "prettier-eslint-cli": "^4.7.1"
+  }
 }
